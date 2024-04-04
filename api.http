@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": 11,
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/5b828ea1-4721-426e-8e86-538e83312d70/attendees
+Content-Type: application/json
+
+{
+  "name": "aSeumeninoaaa",
+  "email": "qqdawqqwwwwqqww@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/5b828ea1-4721-426e-8e86-538e83312d70
+
+###
+
+GET http://localhost:3333/attendees/1/badge
+
+###
+
+GET http://localhost:3333/attendees/6/check-in
+
+###
+
+GET http://localhost:3333/events/5b828ea1-4721-426e-8e86-538e83312d70/attendees?query=seu
